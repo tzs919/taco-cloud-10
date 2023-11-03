@@ -1,0 +1,20 @@
+server:
+  port: 9090
+logging:
+  level:
+    root: DEBUG
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          taco-admin-client:
+            provider: tacocloud
+            client-id: taco-admin-client
+            client-secret: secret
+            authorization-grant-type: authorization_code
+            redirect-uri: "http://127.0.0.1:9090/login/oauth2/code/{registrationId}"
+            scope: writeIngredients,deleteIngredients,openid 
+        provider:
+          tacocloud:
+            issuer-uri: http://authserver:9000

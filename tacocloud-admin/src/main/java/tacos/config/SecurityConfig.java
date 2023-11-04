@@ -33,7 +33,7 @@ public class SecurityConfig {
       )
       .oauth2Login(
         oauth2Login ->
-        oauth2Login.loginPage("/oauth2/authorization/taco-admin-client"))
+        oauth2Login.loginPage("/oauth2/authorization/taco-admin-client"))//指的是当客户端需要登录时要重定向的页面
       .oauth2Client(withDefaults());
     return http.build();
   }

@@ -2,24 +2,4 @@
 
 对应Spring 实战（6）的第8章，注意：代码有改动！
 
-获得授权码（浏览器访问）：http://authserver:9000/oauth2/authorize?response_type=code&client_id=taco-admin-client&scope=writeIngredients+deleteIngredients&redirect_uri=http://127.0.0.1:9090/login/oauth2/code/taco-admin-client
-获得token（postman访问）： http://authserver:9000/oauth2/token
-带着token（Authorization属性）访问POST：http://tacocloud:8080/api/ingredients
-刷新token（postman访问）： http://authserver:9000/oauth2/token
-
-http://authserver:9000/.well-known/openid-configuration
-
-其它：
-http://localhost:9000/oauth2/authorize?response_type=code&client_id=taco-admin-client&redirect_uri=http://127.0.0.1:9090/login/oauth2/code/taco-admin-client&scope=writeIngredients+deleteIngredients
-
-
-
-http://localhost:9090/admin/ingredients
-http://localhost:9090/oauth2/authorization/taco-admin-client
-http://authserver:9000/oauth2/authorize?response_type=code&client_id=taco-admin-client&scope=writeIngredients%20deleteIngredients%20openid&state=vKe2fubLiQhmvM6I4p5LUWAxKNmAjnZHss0zmdUUrEs%3D&redirect_uri=http://127.0.0.1:9090/login/oauth2/code/taco-admin-client&nonce=7x851bTQR3QQCg-xqh-6-BMwr9DY8B0elbfW9ObSvg8
-http://authserver:9000/login   habuma, password
-http://authserver:9000/oauth2/authorize?response_type=code&client_id=taco-admin-client&scope=writeIngredients%20deleteIngredients%20openid&state=vKe2fubLiQhmvM6I4p5LUWAxKNmAjnZHss0zmdUUrEs%3D&redirect_uri=http://127.0.0.1:9090/login/oauth2/code/taco-admin-client&nonce=7x851bTQR3QQCg-xqh-6-BMwr9DY8B0elbfW9ObSvg8
-
-
-http://127.0.0.1:9090/oauth2/authorization/taco-admin-client?error
-https://blog.csdn.net/ShenHuanZhiLian/article/details/132096294
+详见《D:\projects\南大\2023授课下\课件\10-服务端开发-OAuth2.pptx》

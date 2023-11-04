@@ -59,7 +59,7 @@ public class AuthorizationServerConfig {
         .authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
         .authorizationGrantType(AuthorizationGrantType.REFRESH_TOKEN)
         .redirectUri(
-            "http://127.0.0.1:9090/login/oauth2/code/taco-admin-client")
+            "http://clientadmin:9090/login/oauth2/code/taco-admin-client")//用于验证的，客户端会传相同的重定向地址过来，这个地址用于客户端登录
         .scope("writeIngredients")
         .scope("deleteIngredients")
         .scope(OidcScopes.OPENID)

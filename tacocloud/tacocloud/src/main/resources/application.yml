@@ -29,7 +29,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          jwk-set-uri: http://tacocloud:9000/oauth2/jwks
+          jwk-set-uri: http://authserver:9000/oauth2/jwks
 # end::jwkSetUri[]
 ---
 spring:
